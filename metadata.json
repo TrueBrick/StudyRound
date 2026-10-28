@@ -1,0 +1,6 @@
+{
+  "name": "StudyRound",
+  "description": "Plataforma gamificada para organizar objetivos de estudo, cronômetros de foco integrados, recompensas e acompanhamento de desempenho.",
+  "requestFramePermissions": ["notifications", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

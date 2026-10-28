@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+.theme-amber {
+  background-color: #fefcf6;
+  color: #382d1c;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Scrollbar suave e acolhedora */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 83, 9, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 83, 9, 0.35);
+}
