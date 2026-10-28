@@ -241,7 +241,7 @@ cd StudyRound
 # 2. Instale as dependências
 bun install
 # ou, com npm:
-npm install --legacy-peer-deps
+npm install
 
 # 3. Configure as variáveis de ambiente
 cp .env.example .env
@@ -382,8 +382,6 @@ StudyRound/
 - Os dados ficam apenas no navegador atual (`localStorage`); limpar os dados do site apaga o progresso.
 - O cronômetro usa `setInterval` e pode atrasar quando a aba fica em segundo plano por muito tempo.
 - A extração de texto funciona para `.txt`, `.md`, `.json` e `.csv`; PDFs e imagens são anexados, mas seu conteúdo ainda não é lido para gerar resumos.
-- O pacote `ws` é usado pelo servidor, mas ainda não está declarado em `package.json` (hoje é resolvido como dependência transitiva).
-- Com npm, a instalação exige `--legacy-peer-deps` por conflito de versão entre `esbuild` e `vite`.
 
 ---
 
